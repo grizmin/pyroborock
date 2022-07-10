@@ -5,14 +5,14 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name='pyroborock',
-    version='1.0.9',
+    name='pyroborock-grizmin',
+    version='1.0.10',
     packages=['pyroborock'],
-    install_requires=['pytuyapi-ipc==1.0.3', 'python-miio', 'pycryptodome==3.9.8'],
+    install_requires=['pytuyapi-ipc', 'python-miio', 'pycryptodome'],
     description='Communicate with roborock over tuya protocol',
     long_description=read('README.md'),
     long_description_content_type='text/markdown',
-    url='https://github.com/89jd/pyroborock',
+    url='https://github.com/grizmin/pyroborock',
     author='jd89',
     author_email='jd89.dev@gmail.com',
 )
